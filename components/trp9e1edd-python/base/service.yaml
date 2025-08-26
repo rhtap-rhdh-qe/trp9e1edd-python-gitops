@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata: 
+  labels: 
+    app.kubernetes.io/instance: trp9e1edd-python
+    app.kubernetes.io/managed-by: kustomize
+    app.kubernetes.io/name: trp9e1edd-python 
+  name: trp9e1edd-python
+spec:
+  ports:
+  - port: 8081 
+    targetPort: 8081 
+  selector:
+    app.kubernetes.io/instance: trp9e1edd-python 
